@@ -1,0 +1,12 @@
+<div id="screenshots" class="uk-container uk-text-center uk-margin-large-top">
+    <h1 class="uk-text-head uk-text-uppercase">Как он выглядит</h1>
+    <hr class="uk-align-center uk-width-1-6@m">
+    <p>Пакет sZam5 состоит из нескольких скриптов. Интерфейс одного из них, sZamEditor, представлен здесь.</p>
+    <div uk-grid class="uk-flex-center uk-child-width-1-3@s" uk-lightbox="animation: fade">
+        {{ range $.Site.Data.screens.data }}
+            <div>
+                <a href="/images/{{ .Image }}" data-caption="{{ .Title }}"><img data-src="/images/{{ .Image }}" alt="{{ .Title }}" uk-img></a>
+            </div>
+        {{ end }}
+    </div>
+</div>

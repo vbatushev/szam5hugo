@@ -1,0 +1,22 @@
+data:
+  -
+    Title: Настройка обработки шпаций, абзацев и инициалов
+    Image: szam5editor-preferences-spaces.png
+  -
+    Title: Настройка обработки цифр и тире
+    Image: szam5editor-preferences-digits.png
+  -
+    Title: Настройка неотрываемых слов
+    Image: szam5editor-preferences-withoutbreaks.png
+  -
+    Title: Настройка обработки сокращений
+    Image: szam5editor-preferences-abreviaturas.png
+  -
+    Title: Настройка правил
+    Image: szam5editor-preferences-rules.png
+  -
+    Title: Настройка исполнения
+    Image: szam5editor-preferences-misc.png
+  -
+    Title: Установка скрипта
+    Image: szam5-setup.png

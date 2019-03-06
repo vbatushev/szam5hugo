@@ -1,0 +1,26 @@
+baseURL = "https://szam5.com/"
+languageCode = "ru-ru"
+title = "sZam5"
+enableRobotsTXT = true
+DefaultContentLanguage = "ru"
+googleAnalytics = ""
+theme = "sezam"
+disqusShortname = "szam5"
+
+[params]
+    AuthorName = "Виталий Батушев"
+    Subtitle = "Идеальный текст"
+    Desc = "sZam5 — скрипт Adobe InDesign/InCopy для приведения текстов публикаций к типографическим нормам"
+    favicon = ""
+    facebook = ""
+    twitter = ""
+    instagram = ""
+    youtube = ""
+    github = ""
+    gitlab = ""
+    linkedin = ""
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"

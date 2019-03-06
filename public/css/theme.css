@@ -1,0 +1,12 @@
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+    min-height: 60px;
+}
+
+.uk-navbar-container.uk-background-primary {
+    background: #1e87f0;
+}
+
+.welcome {
+    background: #9037ff !important;
+    min-height: 200px;
+}
