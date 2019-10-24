@@ -1,0 +1,7 @@
+echo "Set permissions for /var/www/szam5hugo/public...";
+echo "CHOWN files...";
+chown -R szam5:szam5 "/var/www/szam5hugo/public";
+echo "CHMOD directories...";
+find "/var/www/szam5hugo/public" -type d -exec chmod 0755 '{}' \;
+echo "CHMOD files...";
+find "/var/www/szam5hugo/public" -type f -exec chmod 0644 '{}' \;
