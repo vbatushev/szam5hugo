@@ -1,4 +1,4 @@
-baseURL = "https://szam5.com/"
+baseURL = "https://szam5.com"
 languageCode = "ru-ru"
 title = "sZam5"
 enableRobotsTXT = true

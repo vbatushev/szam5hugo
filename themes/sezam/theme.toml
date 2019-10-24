@@ -4,11 +4,11 @@
 name = "Sezam"
 license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
-description = ""
+description = "sZam5 Theme"
 homepage = "http://szam5.com/"
-tags = [szam5]
-features = []
-min_version = "1.0"
+tags = ["szam5"]
+features = ["uikit"]
+min_version = "0.58"
 
 [author]
   name = "Vitaly Batushev"
