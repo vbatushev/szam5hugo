@@ -10,13 +10,36 @@
 <meta name="description" content="Разъяснение о том, что такое наборы скрипта sZam5">
 <meta name="theme-color" content="#86ba41">
 <meta name="batushev" content="vitaly" />
-<meta name="generator" content="Hugo 0.58.3" />
+<meta name="generator" content="Hugo 0.62.2" />
 <title>sZam5</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="author" href="//plus.google.com/104168046154002174751" />
 <link rel="shortcut icon" href="/favicon.ico" />
 
 <link rel="stylesheet" href="/css/uikit.szam5.min.css" type="text/css" />
+
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+            k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(24943022, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/24943022" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+
+
 
     <body>
         
@@ -40,48 +63,27 @@
         
     <div class="uk-container">
         <h2 class="uk-margin-top">Наборы</h2>
-        
-
-<p>Набором нормализации в sZam5 является перечень настроек и правил, применяемых пользователем к обрабатываемому тексту. И, конечно же, тем же названием называется и файл набора нормализации, который представляет собой файл формата XML, то есть его можно править не только входящим в комплект скриптом sZamEditor, но и любым текстовым редактором, а также редактором XML.</p>
-
-<div uk-grid class="uk-child-width-1-2@m">
-<figure >
-    <img src="/images/help/file_set.png" title="Вид набора нормализаций изнутри">
-    <figcaption class="uk-text-small uk-text-center">Вид набора нормализаций изнутри</figcaption>
-</figure>
-<figure >
-    <img src="/images/help/xmlnotepad_set.png" title="Редактирование набора нормализаций с помощью редактора XML Notepad">
-    <figcaption class="uk-text-small uk-text-center">Редактирование набора нормализаций с помощью редактора XML Notepad</figcaption>
-</figure>
-</div>
-
+        <p>Набором нормализации в sZam5 является перечень настроек и правил, применяемых пользователем к обрабатываемому тексту. И, конечно же, тем же названием называется и файл набора нормализации, который представляет собой файл формата XML, то есть его можно править не только входящим в комплект скриптом sZamEditor, но и любым текстовым редактором, а также редактором XML.</p>
+<!-- raw HTML omitted -->
 <p>Конечно, можно править набор нормализации и так, рискуя ошибиться и получить неработающий набор, но лучше воспользоваться sZamEditor. Пробежимся вкратце по его интерфейсу.</p>
-
 <p>Перед нами окно sZamEditor. На нем существуют четыре рабочие зоны:</p>
-
 <ol>
 <li>Зона управления наборами нормализаций, которая позволяет создавать, выбирать, копировать и удалять наборы нормализаций.</li>
 <li>Панель переключения разделов настроек набора.</li>
 <li>Выпадающий список с доступными языками интерфейса.</li>
 <li>Рабочая зона с текущими настройками выбранного набора нормализаций в зависимости от выбранного раздела настроек.</li>
 </ol>
-
 <figure >
     <img src="/images/help/szam5editor-layout.png" title="">
     <figcaption class="uk-text-small uk-text-center"></figcaption>
 </figure>
-
 <h3 id="шпации-абзацы-инициалы">Шпации, абзацы, инициалы</h3>
-
 <figure >
     <img src="/images/szam5editor-preferences-spaces.png" title="">
     <figcaption class="uk-text-small uk-text-center"></figcaption>
 </figure>
-
 <p>Данный раздел позволяет настроить типографические правила для обработки шпаций (пробелов), табуляций, абзацев, слэшей (косая черта), разрядов чисел, кавычек.</p>
-
 <p>Вы можете:</p>
-
 <ul>
 <li>настроить удаление множественных (два и более) шпаций (пробелов) и пустых абзацев, удаление табуляций в начале и/или в конце абзаца (таким образом неграмотные наборщики пытаются изобразить абзацный отступ),</li>
 <li>добавить шпацию между цифрой и символом валюты (по умолчанию, этих символов два $ и €,</li>
@@ -94,18 +96,13 @@
 <li>заменить три поставленные подряд точки на специальный Unicode-символ многоточие</li>
 <li>отбивать знаки препинания так, как принято во французской типографике.</li>
 </ul>
-
 <h3 id="цифры-и-тире">Цифры и тире</h3>
-
 <figure >
     <img src="/images/szam5editor-preferences-digits.png" title="">
     <figcaption class="uk-text-small uk-text-center"></figcaption>
 </figure>
-
 <p>Раздел предназначен для настройки обработки тире и дефисов.</p>
-
 <p>Позволяет:</p>
-
 <ul>
 <li>выбрать тип используемого тире (короткое – или длинное —),</li>
 <li>выбрать тип шпации перед/после тире, а так же после тире в начале абзаца,</li>
@@ -115,35 +112,23 @@
 <li>заменить дефис в наращениях (например, делов-то, зачем-нибудь) на неразрывный,</li>
 <li>предохранить номера телефонов от обработки тире в межчисловых сочетаниях.</li>
 </ul>
-
 <h3 id="неотрываемые-слова">Неотрываемые слова</h3>
-
 <figure >
     <img src="/images/szam5editor-preferences-withoutbreaks.png" title="">
     <figcaption class="uk-text-small uk-text-center"></figcaption>
 </figure>
-
 <p>Раздел предназначен для редактирования списков неотрываемых слов, таких как частицы, союзы и предлоги.</p>
-
 <p>Данные списки могут быть отредактированы для каждого отдельного набора нормализаций, например, для обработки иноязычных текстов.</p>
-
 <p>Для редактирования строки списка необходимо выбрать его мышью, а после внесенных изменений нажать кнопку .</p>
-
 <p>Слова в строке должны быть разделены вертикальной чертой (|). Допустимо использовать символы регулярных выражений, принятых в Adobe InDesign.</p>
-
 <p>Для поиска слов без учета регистра необходимо предварить строку модификатором (?i), с учетом регистра — (?-i).</p>
-
 <p>Подробнее о регулярных выражениях, применяемых в Adobe InDesign, смотрите в официальной документации Adobe.</p>
-
 <h3 id="сокращения">Сокращения</h3>
-
 <figure >
     <img src="/images/szam5editor-preferences-abreviaturas.png" title="">
     <figcaption class="uk-text-small uk-text-center"></figcaption>
 </figure>
-
 <p>Данный раздел помогает настроить обработку (установку необходимой шпации между частями сокращения) как обычных сокращений (аббревиатур), так и сокращений единиц измерения (установку необходимой шпации между значением и сокращением,например, 15 мм).</p>
-
 <p>Разделы <a href="/help/rules/">Правила</a> и <a href="/help/preferences/">Настройки исполнения</a> рассматриваются в соответствующих разделах данного сайта.</p>
 
         
@@ -155,9 +140,18 @@
     <div>
 
         </div>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/uikit/3.2.0/js/uikit-icons.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
 <script src="/js/theme.js"></script>
+
+
+<a href="https://metrika.yandex.ru/stat/?id=24943022&amp;from=informer" target="_blank" rel="nofollow"><img
+        src="https://informer.yandex.ru/informer/24943022/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+        style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика"
+        title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+        class="ym-advanced-informer" data-cid="24943022" data-lang="ru" /></a>
+
+
 
     </body>
 </html>
