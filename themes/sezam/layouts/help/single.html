@@ -1,3 +1,6 @@
+{{ define "header"}}
+    {{ partial "help/head.html" . }}
+{{ end }}
 {{ define "nav"}}
      {{ partial "help/nav.html" . }}
 {{ end }}
@@ -16,6 +19,9 @@
     </div>
     <hr>
     <div class="uk-container uk-text-center uk-margin-bottom">
-        Виталий Батушев &copy; 2019
+        Виталий Батушев &copy; 2020
     <div>
+{{ end }}
+{{ define "footer"}}
+{{ partial "help/footer.html" . }}
 {{ end }}

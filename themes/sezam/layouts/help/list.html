@@ -1,3 +1,6 @@
+{{ define "header"}}
+    {{ partial "help/head.html" . }}
+{{ end }}
 {{ define "nav"}}
      {{ partial "help/nav.html" . }}
 {{ end }}
@@ -6,4 +9,7 @@
         <h2 class="uk-margin-top">{{ .Title }}</h2>
         {{.Content}}
     </div>
+{{ end }}
+{{ define "footer"}}
+    {{ partial "help/footer.html" . }}
 {{ end }}
