@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on sZam5</title>
-    <link>https://szam5.com/categories/</link>
+    <link>https://vbatushev.github.io/szam5hugo/categories/</link>
     <description>Recent content in Categories on sZam5</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru-ru</language>
     
-	<atom:link href="https://szam5.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://vbatushev.github.io/szam5hugo/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
