@@ -13,5 +13,5 @@ description: Раздел помощи по работа со скриптом s
 
 Когда-то давным-давно я написал этот паразитирующее на MS Word VB-приложение. Периодически его спрашивают, поэтому выложу прямо сюда:
 
-- [vZam.zip](/files/vZam.zip)
-- [vZamHelp.zip](/files/vZamHelp.zip)
+- [vZam.zip]({{< filepath src="files/vZam.zip" >}})
+- [vZamHelp.zip]({{< filepath src="files/vZamHelp.zip" >}})
