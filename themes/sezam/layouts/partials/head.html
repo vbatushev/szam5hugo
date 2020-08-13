@@ -12,11 +12,11 @@
 
 {{ hugo.Generator }}
 <title>{{ .Site.Title }}</title>
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="{{ "manifest.json" | relURL }}">
 <link rel="author" href="//plus.google.com/104168046154002174751" />
-<link rel="shortcut icon" href="favicon.ico" />
+<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}" />
 <!-- link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" type="text/css" / -->
-<link rel="stylesheet" href="css/uikit.szam5.min.css" type="text/css" />
+<link rel="stylesheet" href="{{ "css/uikit.szam5.min.css" | relURL }}" type="text/css" />
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {

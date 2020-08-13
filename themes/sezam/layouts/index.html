@@ -1,6 +1,3 @@
-{{ define "header"}}
-    {{ partial "head.html" . }}
-{{ end }}
 {{ define "nav" }}
     {{ partial "szam5/nav.html" . }}
 {{ end }}
@@ -13,7 +10,4 @@
     {{.Content}}
     {{ partial "szam5/modals.html" . }}
     <a href="#welcome" uk-totop uk-scroll="offset: 40" class=""></a>
-{{ end }}
-{{ define "footer"}}
-{{ partial "footer.html" . }}
 {{ end }}
