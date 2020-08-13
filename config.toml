@@ -6,6 +6,7 @@ DefaultContentLanguage = "ru"
 googleAnalytics = ""
 theme = "sezam"
 disqusShortname = "szam5"
+publishDir = "docs"
 
 [params]
     AuthorName = "Виталий Батушев"

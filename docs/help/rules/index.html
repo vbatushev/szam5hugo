@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="google-site-verification" content="eqi-4oXgniOzDoS9weONuGd0T26Q6_xJMM3jMpl0GjM" />
+<meta name='yandex-verification' content='53852643c6dffe8f' />
+<meta name='yandex-verification' content='621bc1d98e200ad2' />
+<meta name="msvalidate.01" content="BDE2466CB3FE294B30A87D1771F57FD1" />
+<meta name="description" content="Краткое пояснение, что такое правила (rules) в скрипте sZam5 и как они работают">
+<meta name="theme-color" content="#86ba41">
+<meta name="batushev" content="vitaly" />
+<meta name="generator" content="Hugo 0.74.3" />
+<title>sZam5</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="author" href="//plus.google.com/104168046154002174751" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<link rel="stylesheet" href="/css/uikit.szam5.min.css" type="text/css" />
+
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(
+            k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(24943022, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+    });
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/24943022" style="position:absolute; left:-9999px;" alt="" /></div>
+</noscript>
+
+
+
+    <body>
+        
+     <div id="nav" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" class="uk-background-secondary uk-light">
+    <nav class="uk-navbar-container uk-navbar-transparent uk-container" uk-navbar style="position: relative; z-index: 980;">
+        <a href="/" class="uk-navbar-item uk-logo"><img src="/images/logo-szam5-white.png" alt="Правила" /></a>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="/help/use/">Использование sZam5</a></li>
+                <li><a href="/help/please_help/">Когда ничего не получается</a></li>
+                <li><a href="/help/questions/">Вопросы и ответы</a></li>
+                <li><a href="/help/versions/">История версий</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+
+        <div id="content">
+        
+    <div class="uk-container">
+        <h2 class="uk-margin-top">Правила</h2>
+        <p>Правила, с одной стороны, самый сложный и непонятный для пользователей раздел. С другой, он позволяет выполнять самые экзотические требования к обработке текста.</p>
+<p>По большому счету, сам sZam5 является просто оберткой для целого набора (около 70) правил. Добавлять новые и, соответственно, еще более усложнять интерфейс настройки мне кажется неразумным, поэтому рекомендую почитать документацию по работе с регулярными выражениями в Adobe InDesign и сделать свой sZam5 еще мощнее.</p>
+<p>Необходимо отметить, что sZam5 различает два типа правил:</p>
+<ol>
+<li>Правила, которые выполняются после основной обработки,</li>
+<li>И правила, которые выполняются до этой самой основной обработки.</li>
+</ol>
+<p>Чтобы указать, что данное правило должно обрабатываться до основной обработки, необходимо предварить его название восклицательным знаком.
+Например, !Суперобработка.</p>
+<p>Таковые правила могут понадобиться, например, для предохранения тех или иных частей текста от обработки, как это сделано в учебном фильме о предохранении апострофов от обработки.</p>
+<p>Теперь несколько фильмов.</p>
+<h3 id="создание-правила-в-szam5">Создание правила в sZam5</h3>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3kBmUQeI0Jk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h3 id="предохранение-апострофов">Предохранение апострофов</h3>
+<p>Некоторым пользователям крайне необходимо использовать в своих публикациях апострофы, однако проблема заключается в том, что Adobe InDesign всегда преобразует апостроф в одинарную кавычку, а они в свою очередь обрабатываются sZam5 именно как кавычки, а не как апостроф. Казалось бы ситуация безвыходная и доводящая отдельных пользователей до отчаянья. Однако спешу успокоить волнующихся граждан — чтобы исправить эту ситуацию и предохранить ваши апострофы от обработки, достаточно совсем немногого.</p>
+<p>Для этого нам нужно, как я уже упомянул, два правила, название одного из которых должно начинаться с восклицательного знака, потому что такие правила выполняются прежде обычных правил и до встроенной обработки sZam5. Идея же предохранения проста: мы сначала меняем апострофы на некий неиспользуемый в публикации символ (я использовал знак йены ¥, но желающие могут поискать себе другой, например, в <a href="https://unicode-table.com/ru/">таблице символов Unicode</a>), а после обработки меняем эту ¥ обратно на апостроф. Как это делается, и рассказывает это фильм.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/un9qBcnvrfg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+        
+        
+    </div>
+    <hr>
+    <div class="uk-container uk-text-center uk-margin-bottom">
+        Виталий Батушев &copy; 2019
+    <div>
+
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
+<script src="/js/theme.js"></script>
+
+
+<a href="https://metrika.yandex.ru/stat/?id=24943022&amp;from=informer" target="_blank" rel="nofollow"><img
+        src="https://informer.yandex.ru/informer/24943022/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+        style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика"
+        title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+        class="ym-advanced-informer" data-cid="24943022" data-lang="ru" /></a>
+
+
+
+    </body>
+</html>
