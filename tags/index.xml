@@ -5,10 +5,6 @@
     <link>https://szam5.com/tags/</link>
     <description>Recent content in Tags on sZam5</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language>
-    
-	<atom:link href="https://szam5.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>ru-ru</language><atom:link href="https://szam5.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
