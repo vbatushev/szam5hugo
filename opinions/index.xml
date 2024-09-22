@@ -4,7 +4,8 @@
     <title>Мнения on sZam5</title>
     <link>https://szam5.com/opinions/</link>
     <description>Recent content in Мнения on sZam5</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>ru-ru</language><atom:link href="https://szam5.com/opinions/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>ru-ru</language>
+    <atom:link href="https://szam5.com/opinions/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
